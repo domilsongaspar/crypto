@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto | Test page</title>
+    <link rel="shortcut icon" href="http://www.crypto.com/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://www.crypto.com/css/all.min.css">
+    <link rel="stylesheet" href="http://www.crypto.com/css/test.css">
+    <link rel="stylesheet" href="http://www.crypto.com/css/toast.css">
+    <script defer src="http://www.crypto.com/js/promisses.js"></script>
+    <script defer src="http://www.crypto.com/js/toast.js"></script>
+    <script defer src="http://www.crypto.com/js/test.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="header">
+            <figure class="logo">
+                <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+            </figure>
+        </div>
+
+        <div class="main">
+            <div class="field">
+                <div class="icons">
+                    <i class="fa fa-clock" id="time"></i>
+                    <i class="fa fa-lock actived" id="lock"></i>
+                    <i class="fa fa-lock-open" id="unlock"></i>
+                </div>
+                <textarea cols="30" rows="6" name="text" id="text" placeholder="Put your text here | Max characters 255"></textarea>
+            </div>
+
+            <div class="field d-none" id="resultContainer">
+                <span class="d-block">Result:</span>
+                <p id="result"></p>
+            </div>
+
+            <div class="send">
+                <button type="button" data-at="lock" data-up="static" name="go" id="go">Go</button>
+            </div>
+        </div>        
+    </div>
+    <div id="toastLanding"></div>
+</body>
+</html>

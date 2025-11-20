@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto | API Documentation</title>
+    <link rel="shortcut icon" href="http://www.crypto.com/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://www.crypto.com/css/docs.css">
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <figure class="logo">
+                    <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+                </figure>
+
+                <h1 class="docTitle">API | Documentation</h1>
+            </div>
+
+            <div class="main">
+                <h3>Encrypt</h3>
+                <p class="content">
+                    To encrypt a data Crypto gives a class called CryptoRequest,
+                    follow the sintax bellow to use this class.
+                </p>
+
+                <div class="example">
+                    <code>
+                        &lt;span id="target">&lt;span/>
+                    </code>
+                </div>
+
+                <div class="example">
+                    <code>
+                        <div class="line">
+                            <span class="palVioletRed">var</span> request = 
+                            new <span class="green">CryptoRequest</span>();
+                            <br>
+                            <span class="palVioletRed">var</span> target = 
+                            document.<span class="yellow">getElementById</span>(<span class="red">'target'</span>);
+                        </div>
+
+                        <div class="line">
+                            <br>
+                            request.<span class="yellow">send</span>( <span class="blue">function</span> (res) {<br>
+                                <span class="tab">target.innerText = res;</span><br>
+                            }, <span class="red">`lk=${text}&ce=${ce}&pr=${pr}&sd=1`</span>);
+                        </div>
+                    </code>
+                </div>
+
+                <p class="content">
+                    Where:
+                    <ul class="list">
+                        <li><b>lk</b> is the data to encrypt.</li>
+                        <li><b>ce</b> is the code of your cryptography.</li>
+                        <li><b>pr</b> is your acoount ID.</li>
+                        <li><b>sd</b> represents the send of request.</li>
+                        <li><b>res</b> is a variable with the request result.</li>
+                    </ul>
+                </p>
+
+                <h3>Decrypt</h3>
+                <p class="content">
+                    To decrypt a data Crypto gives a class called CryptoRequest,
+                    follow the sintax bellow to use this class.
+                </p>
+
+                <div class="example">
+                    <code>
+                        &lt;span id="target">&lt;span/>
+                    </code>
+                </div>
+
+                <div class="example">
+                    <code>
+                        <div class="line">
+                            <span class="palVioletRed">var</span> request = 
+                            new <span class="green">CryptoRequest</span>();
+                            <br>
+                            <span class="palVioletRed">var</span> target = 
+                            document.<span class="yellow">getElementById</span>(<span class="red">'target'</span>);
+                        </div>
+
+                        <div class="line">
+                            <br>
+                            request.<span class="yellow">send</span>( <span class="blue">function</span> (res) {<br>
+                                <span class="tab">target.innerText = res;</span><br>
+                            }, <span class="red">`uk=${text}&ce=${ce}&pr=${pr}&sd=1`</span>);
+                        </div>
+                    </code>
+                </div>
+
+                <p class="content">
+                    Where:
+                    <ul class="list">
+                        <li><b>uk</b> is the data to decrypt.</li>
+                        <li><b>ce</b> is the code of your cryptography.</li>
+                        <li><b>pr</b> is your acoount ID.</li>
+                        <li><b>sd</b> represents the send of request.</li>
+                        <li><b>res</b> is a variable with the request result.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <figure class="logoContainer">
+                    <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+                </figure>
+
+                <nav class="nav-links">
+                    <a href="http://www.crypto.com/en/index.html#header" title="Back to top">Home</a>
+                    <a href="http://www.crypto.com/en/about.html" title="About">About</a>
+                    <a href="http://www.crypto.com/en/documentation.html" title="Documentation">Documentation</a>
+                </nav>
+            </div>
+            <p class="copyright">&copy; 2022 | Domilson Gaspar. All Rights Reserved.</p>
+        </footer>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+span.toast {
+    display: block;
+    width: max-content;
+    padding: 1em 2em;
+    background-color: tomato;
+    border-radius: 2em;
+    color: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: .8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 1031;
+}
+
+@media screen and (min-width: 640px) {
+    span.toast {
+        padding: 1em 3em;
+        font-size: 1.1em;
+    }
+}

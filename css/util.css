@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.block {
+    display: block;
+}
+
+.noutline {
+    outline: none;
+}
+
+.l-h-2 {
+    line-height: 1.8rem;
+}
+
+.mt-1 {
+    margin-top: 1em;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.mt-3 {
+    margin-top: 3em;
+}
+
+.my-3 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Text Colors and alignments*/
+
+.t-dark {
+    color: #000;
+}
+
+.t-white {
+    color: #fff;
+}
+
+.t-blue {
+    color: royalblue;
+}
+
+.t-green {
+    color: rgb(0, 204, 0);
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-justify {
+    text-align: justify;
+}
+
+.t-ident-1 {
+    text-indent: 1rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Cursors */
+
+.c-pointer {
+    cursor: pointer;
+}
+
+/* Positions */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/* Width */
+
+.w-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+/* Z-index */
+
+.index-1 {
+    z-index: 1;
+}
+
+.index-2 {
+    z-index: 2;
+}
+
+.index-3 {
+    z-index: 3;
+}
+
+.index-4 {
+    z-index: 4;
+}
+
+.index-5 {
+    z-index: 5;
+}

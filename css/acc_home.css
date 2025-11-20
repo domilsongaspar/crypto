@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Roboto';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.w-break {
+    word-break: break-all;
+    line-height: 1.4rem;
+}
+
+.icon-input {
+    border: 1px solid #ccc;
+    border-radius: .15em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+.icon-input input {    
+    width: calc(100% - 24px);
+    border: none;
+    padding: .5em;
+    outline: none;
+    font-weight: bold;
+}
+
+.icon-input .fa {
+    cursor: pointer;
+}
+
+.mask {    
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+}
+
+.maskMenu {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+    position: relative;
+    top: 20vh;
+    z-index: 4;
+    width: 50%;
+    margin: auto;
+    padding: 1em;
+}
+
+.maskMenu .closeIcon {
+    float: right;
+    cursor: pointer;
+}
+
+.maskMenu .field {
+    clear: right;
+}
+
+.maskMenu .fieldGroup {
+    width: 100%;
+}
+
+.maskMenu .field label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.maskMenu .field input {
+    display: block;
+    margin-bottom: .5em;
+    padding: .5em;
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: bold;
+}
+
+.maskMenu .field .finish {
+    display: block;
+    margin: .5em 0;
+    padding: 1em;
+    width: max-content;    
+    background-color: rgb(10, 63, 163);
+    border: 1px solid transparent;
+    color: #fff;   
+    cursor: pointer; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.maskMenu .field .finish:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.maskMenu .delContainer {
+    border-top: 1px solid #ccc;
+    padding: 1em 0;
+}
+
+.maskMenu .delContainer .delete {
+    display: block;
+    margin: .5em 0;
+    padding: 1em;
+    width: max-content;    
+    background-color: tomato;
+    border: 1px solid transparent;
+    color: #fff;   
+    cursor: pointer; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.maskMenu .delContainer .delete:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.green-circle {
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-color: rgb(0, 204, 0);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.red-circle {
+    display: inline-block;
+    width: .5em;
+    height: .5em;
+    background-color: rgb(255, 43, 43);
+    border-radius: 50%;
+    padding: 0.5em;
+}
+
+.body {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.body .logo {
+    width: 12em;
+    margin: auto;
+}
+
+.menu {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 1em .5em;
+}
+
+.menu > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;    
+}
+
+.menu .icons a {
+    color: #000;
+}
+
+.main {
+    overflow-y: auto;
+    height: 50vh;
+    padding: .5em;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.main .box {
+    box-shadow: 1px 1px 5px rgb(146, 144, 144);
+    padding: 1em;
+}
+
+.main .box + .box {
+    margin-top: 1em;
+}
+
+.main .box .block {
+    margin: .3em 0;
+}
+
+.box .block:nth-child(1) {
+    font-size: 1.3rem;
+}
+
+.box .block:nth-child(3) {
+    display: flex;
+    align-items: center;
+}
+
+.box .block:nth-child(3) > span {
+    margin-left: .4em;
+}
+
+.box .block:nth-child(4) {
+    border: 1px solid transparent;
+    background-color: rgb(10, 63, 163);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    padding: 1em;
+    transition: 1s;
+}
+
+.box .block:nth-child(4):hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+@media screen and (min-width: 720px) {
+    .body {
+        width: 60%;
+        margin: auto;
+    }
+
+    .main {
+        height: 45vh;
+    }
+
+    .main::-webkit-scrollbar {
+        display: block;
+        background: rgb(85, 140, 241);
+        width: .5em;
+    }
+    
+    .main::-webkit-scrollbar-thumb {
+        background: rgb(10, 63, 163);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .body {
+        width: 40%;
+        margin: auto;
+    }
+}

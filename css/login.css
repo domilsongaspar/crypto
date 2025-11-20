@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Roboto';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form .logo {
+    width: 12em;
+    margin: auto;
+}
+
+.field {
+    margin: 1em 0;
+}
+
+.field label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: .15em;
+    padding: .5em;
+    outline: none;
+    font-weight: bold;
+}
+
+.send button {
+    display: block;
+    width: 100%;
+    background-color: rgb(10, 63, 163);
+    border: 1px solid rgb(10, 63, 163);
+    color: #fff;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background: none;
+    border: 1px solid rgb(10, 63, 163);
+    color: rgb(10, 63, 163);
+}
+
+.goHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.goHome a {
+    color: #000;
+}
+
+.goHome .bar {
+    border: 1px solid #ccc;
+    width: 45%;
+    height: 1px;
+}
+
+@media screen and (min-width: 720px) {
+    .form {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .form {
+        width: 40%;
+        margin: auto;
+    }
+}

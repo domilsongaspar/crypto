@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box;  
+    font-family: 'Roboto';
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.inputEye {
+    width: 100%;
+}
+
+.border-red {
+    border: 1px solid rgba(255, 0, 0, .45) !important;
+}
+
+.border-none {
+    border: none;
+}
+
+.bg-transparent {
+    background: transparent;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.form {
+    width: 100%;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main .steps {
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: 1em auto;
+}
+
+.main .steps .one,
+.main .steps .two {
+    display: block;
+    width: 4em;
+    border: 3px solid #ccc;
+    border-radius: 2em;    
+}
+
+.main .steps .one {
+    cursor: pointer;
+}
+
+.main .steps .currentStep {
+    border-color: rgb(59, 177, 245);
+}
+
+.form .logo {
+    width: 12em;
+    margin: auto;
+}
+
+.field,
+.inputEye {
+    margin: 1em 0;
+}
+
+.field label,
+.icon-input label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+.icon-input {
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: .15em;
+    width: 100%;
+    margin-top: .5em;
+}
+
+.icon-input input {    
+    width: calc(100% - 30px);    
+    padding: .5em;
+    outline: none;
+    font-weight: bold;
+}
+
+.icon-input .fa {
+    cursor: pointer;
+}
+
+.field input {
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: .15em;
+    padding: .5em;
+    outline: none;
+    font-weight: bold;
+}
+
+.send button {
+    display: block;
+    width: 100%;
+    background-color: rgb(10, 63, 163);
+    border: 1px solid rgb(10, 63, 163);
+    color: #fff;
+    padding: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.send button:hover {
+    background: none;
+    border: 1px solid rgb(10, 63, 163);
+    color: rgb(10, 63, 163);
+}
+
+@media screen and (max-width: 719px) and (orientation: landscape) {
+    .form {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .form {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .form {
+        width: 40%;
+        margin: auto;
+    }
+}

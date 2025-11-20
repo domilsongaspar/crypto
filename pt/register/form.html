@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto | Registrar</title>
+    <link rel="shortcut icon" href="http://www.crypto.com/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://www.crypto.com/css/register.css">
+    <link rel="stylesheet" href="http://www.crypto.com/css/animate.min.css">
+    <link rel="stylesheet" href="http://www.crypto.com/css/all.min.css">
+    <script src="http://www.crypto.com/js/promisses.js"></script>
+    <script src="http://www.crypto.com/js/register.js"></script>
+    <script defer src="http://www.crypto.com/js/form_icons.js"></script>
+</head>
+<body>
+    <div class="form">
+        <div class="header">
+            <figure class="logo">
+                <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+            </figure>
+        </div>
+
+        <div class="main">
+            <div class="steps">
+                <span class="one currentStep"></span>
+                <span class="two"></span>
+            </div>
+            
+            <div class="visible animated">
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" class="input" id="name" placeholder="Nome">
+                </div>
+
+                <div class="field">
+                    <label for="lastName">Apelido</label>
+                    <input type="text" name="lastName" class="input" id="lastName" placeholder="Apelido">
+                </div>
+
+                <div class="field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" class="input" id="email" placeholder="Coloque o seu e-mail">
+                </div>
+            </div>
+
+            <div class="hidden animated">
+                <div class="inputEye">
+                    <label for="password">Palavra-passe</label>
+                    <div class="icon-input input">
+                        <input type="password" class="bg-transparent border-none" name="password" id="password" placeholder="Coloque a sua palavra-passe">
+                        <span class="fa fa-eye-slash icon_switch"></span>
+                    </div>
+                </div>
+
+                <div class="inputEye">
+                    <label for="confirm">Confirme a sua palavra-passe</label>
+                    <div class="icon-input input">
+                        <input type="password" class="bg-transparent border-none" name="confirm" id="confirm" placeholder="Coloque novamente a sua palavra-passe">
+                        <span class="fa fa-eye-slash icon_switch"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="send">
+                <button type="button" class="hidden animated" id="finish">Concluír</button>
+                <button type="button" class="visible animated" id="next">Próximo</button>                
+            </div>
+        </div>
+        
+        <input type="hidden" id="lang" value="pt">
+    </div>    
+</body>
+</html>

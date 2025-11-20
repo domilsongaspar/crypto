@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto | API Documentação</title>
+    <link rel="shortcut icon" href="http://www.crypto.com/favicon.png" type="image/png">
+    <link rel="stylesheet" href="http://www.crypto.com/css/docs.css">
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <div class="header">
+                <figure class="logo">
+                    <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+                </figure>
+
+                <h1 class="docTitle">API | Documentação</h1>
+            </div>
+
+            <div class="main">
+                <h3>Cryptografia</h3>
+                <p class="content">
+                    Para criptografar uma informacão Crypto fornece uma classe chamada CryptoRequest,
+                    segue a sintaxe abaixo para utilizar esta classe.
+                </p>
+
+                <div class="example">
+                    <code>
+                        &lt;span id="target">&lt;span/>
+                    </code>
+                </div>
+
+                <div class="example">
+                    <code>
+                        <div class="line">
+                            <span class="palVioletRed">var</span> request = 
+                            new <span class="green">CryptoRequest</span>();
+                            <br>
+                            <span class="palVioletRed">var</span> target = 
+                            document.<span class="yellow">getElementById</span>(<span class="red">'target'</span>);
+                        </div>
+
+                        <div class="line">
+                            <br>
+                            request.<span class="yellow">send</span>( <span class="blue">function</span> (res) {<br>
+                                <span class="tab">target.innerText = res;</span><br>
+                            }, <span class="red">`lk=${text}&ce=${ce}&pr=${pr}&sd=1`</span>);
+                        </div>
+                    </code>
+                </div>
+
+                <p class="content">
+                    Onde:
+                    <ul class="list">
+                        <li><b>lk</b> é a informacão para criptografar.</li>
+                        <li><b>ce</b> é o código da sua criptografia.</li>
+                        <li><b>pr</b> é o ID da sua conta.</li>
+                        <li><b>sd</b> representa o envio da requisição.</li>
+                        <li><b>res</b> é a variável com o resultado da requisição.</li>
+                    </ul>
+                </p>
+
+                <h3>Descriptografar</h3>
+                <p class="content">
+                    Para descriptografar uma informacão Crypto fornece uma classe chamada CryptoRequest,
+                    segue a sintaxe abaixo para utilizar esta classe.
+                </p>
+
+                <div class="example">
+                    <code>
+                        &lt;span id="target">&lt;span/>
+                    </code>
+                </div>
+
+                <div class="example">
+                    <code>
+                        <div class="line">
+                            <span class="palVioletRed">var</span> request = 
+                            new <span class="green">CryptoRequest</span>();
+                            <br>
+                            <span class="palVioletRed">var</span> target = 
+                            document.<span class="yellow">getElementById</span>(<span class="red">'target'</span>);
+                        </div>
+
+                        <div class="line">
+                            <br>
+                            request.<span class="yellow">send</span>( <span class="blue">function</span> (res) {<br>
+                                <span class="tab">target.innerText = res;</span><br>
+                            }, <span class="red">`uk=${text}&ce=${ce}&pr=${pr}&sd=1`</span>);
+                        </div>
+                    </code>
+                </div>
+
+                <p class="content">
+                    Onde:
+                    <ul class="list">
+                        <li><b>uk</b> é a informacão para descriptografar.</li>
+                        <li><b>ce</b> é o código da sua criptografia.</li>
+                        <li><b>pr</b> é o ID da sua conta.</li>
+                        <li><b>sd</b> representa o envio da requisição.</li>
+                        <li><b>res</b> é a variável com o resultado da requisição.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div>
+                <figure class="logoContainer">
+                    <img src="http://www.crypto.com/images/cryptoLogo.svg" alt="Logotipo">
+                </figure>
+
+                <nav class="nav-links">
+                    <a href="http://www.crypto.com/pt/index.html#header" title="Back to top">Início</a>
+                    <a href="http://www.crypto.com/pt/about.html" title="About">Sobre</a>
+                    <a href="http://www.crypto.com/pt/documentation.html" title="Documentation">Documentação</a>
+                </nav>
+            </div>
+            <p class="copyright">&copy; 2022 | Domilson Gaspar. Todos os direitos reservados.</p>
+        </footer>
+    </div>    
+</body>
+</html>
