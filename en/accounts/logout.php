@@ -6,7 +6,7 @@
     $id = $_SESSION['id'];        
     $conn = connect();
 
-    mysqli_query($conn, "UPDATE _users SET _logged = 0 WHERE _id = $id");
+    mysqli_query($conn, "UPDATE _users SET _logged = 0 WHERE _id = '$id'");
 
     session_unset();
     session_destroy();

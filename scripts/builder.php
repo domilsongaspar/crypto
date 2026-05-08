@@ -148,6 +148,9 @@
         private function clearFile ($file) {
             if (file_exists($file)) {
                 $handle = fopen($file, "r+");
+                if (!$handle) {
+                    die("Erro ao abrir arquivo: permissao negada ou caminho invalido");
+                }
                 rewind($handle);
                 ftruncate($handle, 0);
             }
