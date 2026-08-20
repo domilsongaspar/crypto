@@ -10,11 +10,11 @@ services:
     depends_on:
       - db
 
-    environment:
-      DB_HOST: db
-      DB_NAME: cyt_db
-      DB_USER: root
-      DB_PASSWORD: root
+    environment:      
+      DB_HOST: ${DB_HOST}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
 
   nginx:
     image: nginx:alpine
@@ -39,8 +39,8 @@ services:
       - "3306:3306"
 
     environment:
-      MYSQL_DATABASE: cyt_db
-      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
 
     volumes:
       - mysql_data:/var/lib/mysql
